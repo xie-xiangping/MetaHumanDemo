@@ -33,7 +33,7 @@
 		},
 		{
 			"Name": "MetaHuman",
-			"Enabled": true
+			"Enabled": false
 		},
 		{
 			"Name": "OpenAIAPI",
@@ -54,6 +54,10 @@
 		},
 		{
 			"Name": "HairStrands",
+			"Enabled": true
+		},
+		{
+			"Name": "RigLogic",
 			"Enabled": true
 		}
 	]

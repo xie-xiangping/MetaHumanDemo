@@ -10,7 +10,7 @@
 	"DocsURL": "https://github.com/KellanM/OpenAI-Api-Unreal/",
 	"MarketplaceURL": "",
 	"SupportURL": "",
-	"EngineVersion": "5.2.1",
+	"EngineVersion": "5.2.0",
 	"CanContainContent": true,
 	"Installed": true,
 	"Modules": [
@@ -18,7 +18,7 @@
 			"Name": "OpenAIAPI",
 			"Type": "Runtime",
 			"LoadingPhase": "Default",
-			"WhitelistPlatforms": [
+			"PlatformAllowList": [
 				"Win64",
 				"Mac",
 				"Android"
