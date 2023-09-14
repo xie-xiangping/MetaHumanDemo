@@ -18,7 +18,7 @@
 			"Name": "OpenAIAPI",
 			"Type": "Runtime",
 			"LoadingPhase": "Default",
-			"PlatformAllowList": [
+			"WhitelistPlatforms": [
 				"Win64",
 				"Mac",
 				"Android"
