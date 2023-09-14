@@ -1,0 +1,12 @@
+.vs
+Binaries
+Build
+/Content/MetaHumans/Common/Face/Face_Archetype.uasset
+/Content/MetaHumans/Taro/Face/Taro_FaceMesh.uasset
+/Content/TempData
+DerivedDataCache
+Intermediate
+Platforms
+Saved
+.vsconfig
+*.sln
