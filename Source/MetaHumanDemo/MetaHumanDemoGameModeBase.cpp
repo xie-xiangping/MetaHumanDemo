@@ -3,3 +3,9 @@
 
 #include "MetaHumanDemoGameModeBase.h"
 
+AMetaHumanDemoGameModeBase::AMetaHumanDemoGameModeBase() {
+
+	//°ó¶¨¿ØÖÆÆ÷
+	PlayerControllerClass = AMetaHumanController::StaticClass();
+
+}
