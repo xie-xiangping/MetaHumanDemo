@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 #include "GameFramework/GameModeBase.h"
 
+#include "Character/MetaHumanCharacter.h"
 #include "Controller/MetaHumanController.h"
 
 #include "MetaHumanDemoGameModeBase.generated.h"
