@@ -4,6 +4,15 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
+
+#include "InputMappingContext.h"
+//#include "EnhancedPlayerInput.h"
+#include "EnhancedInputComponent.h"
+#include "Camera/CameraComponent.h"
+#include "EnhancedInputSubsystems.h"
+#include "GameFramework/SpringArmComponent.h"
+#include "GameFramework/CharacterMovementComponent.h"
+
 #include "MetaHumanCharacter.generated.h"
 
 UCLASS()
@@ -26,4 +35,28 @@ public:
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
+	void MouseWheelUP();
+
+	void MouseWheelDown();
+
+	float ArmLength = 0.0f;
+
+	bool ArmLengthChange = false;
+
+	float InterpSpeed = 5.0f;
+
+	UPROPERTY(EditAnywhere)
+	UCameraComponent* CameraComponent;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	USpringArmComponent* SpringArmComponent;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	UInputMappingContext* DefaultMappingContext;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	UInputAction* MouseWheelUPAction;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	UInputAction* MouseWheelDownAction;
 };
