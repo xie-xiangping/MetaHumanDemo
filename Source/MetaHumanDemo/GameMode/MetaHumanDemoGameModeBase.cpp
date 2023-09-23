@@ -9,6 +9,6 @@ AMetaHumanDemoGameModeBase::AMetaHumanDemoGameModeBase() {
 	DefaultPawnClass = AMetaHumanCharacter::StaticClass();
 
 	//°ó¶¨¿ØÖÆÆ÷
-	PlayerControllerClass = AMetaHumanController::StaticClass();
-
+	PlayerControllerClass = ConstructorHelpers::FClassFinder<APlayerController>(TEXT("/Game/Blueprints/BP_MetaHumanController")).Class;
+	//PlayerControllerClass = AMetaHumanController::StaticClass();
 }
