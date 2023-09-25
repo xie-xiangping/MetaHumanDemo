@@ -26,6 +26,9 @@ public:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	bool testFlag = true;
+
+	UFUNCTION(BlueprintNativeEvent, BlueprintCallable)
+	void TestFunc();
 protected:
 
 	UPROPERTY(BlueprintReadWrite)

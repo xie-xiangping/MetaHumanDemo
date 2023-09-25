@@ -6,6 +6,7 @@
 #include "Blueprint/UserWidget.h"
 
 #include "Components/Button.h"
+#include "MetaHumanDemo/Tools/Tool.h"
 
 #include "MetaHumanWidget.generated.h"
 
@@ -20,6 +21,8 @@ class METAHUMANDEMO_API UMetaHumanWidget : public UUserWidget
 public:
 
 	void Open();
+
+	Delegate00 Button0DDelegate;
 
 protected:
 

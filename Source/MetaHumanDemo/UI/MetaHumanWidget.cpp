@@ -17,4 +17,5 @@ void UMetaHumanWidget::Open() {
 void UMetaHumanWidget::OnButton0Clicked() {
 	UE_LOG(LogTemp, Warning, TEXT("OnButton0Clicked"));
 
+	Button0DDelegate.ExecuteIfBound();
 }

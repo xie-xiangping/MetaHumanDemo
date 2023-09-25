@@ -10,7 +10,7 @@
 #include "Tool.generated.h"
 
 //无返回值，无函数参数
-DECLARE_DELEGATE(DTDelegate);
+DECLARE_DELEGATE(Delegate00);
 
 /**
  * 
