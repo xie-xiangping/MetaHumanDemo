@@ -27,7 +27,7 @@ AMetaHumanCharacter::AMetaHumanCharacter()
 	MouseWheelUPAction = ConstructorHelpers::FObjectFinder<UInputAction>(TEXT("/Game/Input/Actions/IA_MouseWheelUP.IA_MouseWheelUP")).Object;
 	MouseWheelDownAction = ConstructorHelpers::FObjectFinder<UInputAction>(TEXT("/Game/Input/Actions/IA_MouseWheelDown.IA_MouseWheelDown")).Object;
 
-	SpringArmComponent->TargetArmLength = 0.0f;
+	SpringArmComponent->TargetArmLength = -16.0f;
 }
 
 // Called when the game starts or when spawned
@@ -54,6 +54,8 @@ void AMetaHumanCharacter::Tick(float DeltaTime)
 			ArmLengthChange = false;
 		}
 	}
+
+	//GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Blue, FString::Printf(TEXT("%f"), SpringArmComponent->TargetArmLength));
 }
 
 // Called to bind functionality to input
@@ -71,8 +73,8 @@ void AMetaHumanCharacter::MouseWheelUP()
 {
 	ArmLengthChange = true;
 
-	if (ArmLength > -34.0f) {
-		ArmLength -= 16.0f;
+	if (ArmLength > -71.9f) {
+		ArmLength -= 8.0f;
 	}
 }
 
@@ -80,7 +82,7 @@ void AMetaHumanCharacter::MouseWheelDown()
 {
 	ArmLengthChange = true;
 
-	if (ArmLength < 160.0f) {
-		ArmLength += 16.0f;
+	if (ArmLength < -16.1f) {
+		ArmLength += 8.0f;
 	}
 }
